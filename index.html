@@ -1,0 +1,94 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="fejd, Fejd, fejd.pl, fejd pl, fejdowski, ! Fejd#0001, Discord Fejd">
+    <link href="style.css" rel="stylesheet">
+    <title>Fejd</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="author" content="! Fejd#0001">
+    <meta name="copyright" content="! Fejd#0001">
+    <meta property="og:title" content="Fejd">
+    <meta property="og:image" content="https://i.imgur.com/klxthPM.png">
+    <meta property="og:site_name" content="fejd.pl">
+    <meta name="og:description" content="Hi! I'm Fejd. I'm currently learning frontend and backend!">
+    <meta name="theme-color" content="#0096ff">
+    <link rel="shortcut icon" type="image/jpg" href="https://i.imgur.com/klxthPM.png">
+    <script async src="https://arc.io/widget.min.js#bvKJGf3y"></script>
+  </head>
+  <body id="body">
+    <script>
+      themeToggler = () => {
+        const bodyt = document.getElementById("body")
+        if(!bodyt.classList.contains("dark")) {
+           bodyt.classList.add("dark")
+        } else {
+          bodyt.classList.remove("dark")
+        }
+        const moon = document.getElementById("bx-moon")
+        if(!moon.classList.contains("hidden")) {
+          moon.classList.add("hidden")
+        } else {
+          moon.classList.remove("hidden")
+        }
+
+        const sun = document.getElementById("bx-sun")
+        if(sun.classList.contains("hidden")) {
+          sun.classList.remove("hidden")
+        } else {
+          sun.classList.add("hidden")
+        }
+
+      }
+    </script>
+    <div class="container">
+      <nav>
+        <p>Fejd</p>
+        <i class='bx bx-moon' id="bx-moon" onClick="themeToggler()" ></i>
+        <i class='bx bx-sun hidden' id="bx-sun" onClick="themeToggler()" style='color:#ffffff'  ></i>
+      </nav>
+      <header>
+        <h2>Hi! I'm Fejd.</h2>
+        <h3>I'm currently learning <span class="typing" data-typed-items="frontend!, backend!"></span></h3>
+        <a href="https://discord.com/users/843066455310467072/"rel="noopener noreferrer" target="_blank"><i class='bx bxl-discord'></i> Discord</a>
+      </header>
+    </div>
+    <svg class="wave1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220">
+      <path class="wavecolor" fill="#f3f4f5" fill-opacity="1" d="M0,96L48,85.3C96,75,192,53,288,58.7C384,64,480,96,576,117.3C672,139,768,149,864,149.3C960,149,1056,139,1152,112C1248,85,1344,43,1392,21.3L1440,0L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+    </svg>
+    <div class="icons">
+      <a href="https://discord.com/users/843066455310467072"rel="noopener noreferrer" target="_blank"><i class='bx bxl-discord'></i></a>
+      <a href="https://instagram.com/fejdowski"rel="noopener noreferrer" target="_blank"><i class='bx bxl-instagram-alt' ></i></a>
+    </div>
+    <div class="circle"></div>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      
+    const select = (el, all = false) => {
+        el = el.trim()
+        if (all) {
+            return [...document.querySelectorAll(el)]
+        } else {
+            return document.querySelector(el)
+        }
+    }
+    const typed = select('.typing')
+    if (typed) {
+        let typed_strings = typed.getAttribute('data-typed-items')
+        typed_strings = typed_strings.split(',')
+        new Typed('.typing', {
+            strings: typed_strings,
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 50,
+            backDelay: 2000
+        });
+    }
+
+    </script>
+  </body>
+</html>

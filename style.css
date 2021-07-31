@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+  transition: .5s;
+}
+
+html, body {
+    height: 100% !important;
+    width: 100% !important;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 !important;
+    padding: 0 !important;
+    text-decoration: none !important;
+    overflow-x: hidden !important;
+    overflow-y: hidden !important;
+}
+
+:root{
+    --bg-color: #222222;
+    --bg-card: rgb(76, 76, 76);
+}
+
+
+.container{
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+nav p {
+    text-align: left !important;
+    font-size: 25px;
+    font-weight: 600;
+}
+ 
+nav i {
+    float: right !important;
+    cursor: pointer !important;
+    font-size: 25px;
+    margin-top: -53px;
+}
+
+header{
+    transform: translateY(30vh)
+}
+
+
+header h3{
+    margin-top: -20px;
+    font-weight: 500;
+}
+
+header a{
+    background-color: #0090FF;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    text-decoration: none !important;
+}
+
+header a i {
+    transform: translateY(3px);
+    color: white;
+    font-size: 20px;
+}
+
+.wave1{
+    position: absolute;
+    bottom: 0;
+    z-index: 999 !important;
+}
+
+.circle{
+    z-index: 1 !important;
+    width: 80vh;
+    height: 80vh;
+    border-radius: 50%;
+    background-color: #0090FF;
+    position: absolute;
+    right: -80px;
+    bottom: -80px;
+}
+
+
+/* DARK */
+
+.dark{
+    background-color:black;
+}
+
+.dark nav p {
+    text-align: left !important;
+    font-size: 25px;
+    color: white;
+    fill: white !important;
+    font-weight: 600;
+}
+ 
+.hidden{
+    display: none !important;
+}
+
+.dark nav i {
+    float: right !important;
+    cursor: pointer !important;
+    font-size: 25px;
+    margin-top: -53px;
+}
+
+.dark header{
+    color: white;
+    transform: translateY(30vh)
+}
+
+
+.dark header h3{
+    margin-top: -20px;
+    font-weight: 500;
+}
+
+.dark header a{
+    background-color: #0090FF;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    text-decoration: none !important;
+}
+
+.dark header a i {
+    transform: translateY(3px);
+    color: white;
+    font-size: 20px;
+}
+
+.dark .wave1{
+    position: absolute;
+    bottom: 0;
+    fill: black !important;
+    z-index: 999 !important;
+}
+
+.dark .wavecolor{
+    fill: rgb(30, 30, 30) !important;
+}
+
+
+@media screen and (max-width:1331px) {
+    .container{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+@media screen and (max-width:1167px) {
+    .circle{
+        width: 60vh !important;
+        height: 60vh !important;
+    }
+}
+
+@media screen and (max-width:505px) {
+    .circle{
+        width: 40vh !important;
+        height: 40vh !important;
+    }
+}
+
+
+.icons{
+    position: absolute;
+    z-index: 999999 !important;
+    font-size: 25px;
+    bottom: 20px;
+    left:50%;
+    margin-left:-25px;
+}
+
+.icons i {
+    color: black !important;
+}
+
+.dark .icons i {
+    color: white !important;
+}
+
+@media screen and (max-width:1066px){
+    .icons{
+        bottom: 10px !important;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .icons{
+        bottom: 0px !important;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .wave1{
+        display: none !important;
+    }
+
+    .circle{
+        display: none !important;
+    }
+}
